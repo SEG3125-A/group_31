@@ -12,3 +12,29 @@
     align-items: center;
     color: white;
 }
+/* Cart Page Styles */
+#cart {
+    width: 80%;
+    margin: auto;
+}
+
+#cart h2 {
+    text-align: center;
+    color: #333;
+}
+
+#cartTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#cartTable th, #cartTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#total {
+    color: #f30;
+}
