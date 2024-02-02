@@ -4,6 +4,7 @@ $(document).ready(function(){
     if(preferences && preferences.length > 0){
         $('.col-sm-4').each(function(){
             var productCategories = $(this).find('.card-text').last().text().split(', ');
+            console.log(productCategories)
             var showProduct = false;
             for(var i = 0; i < preferences.length; i++){
                 if(productCategories.includes(preferences[i])){
@@ -12,7 +13,7 @@ $(document).ready(function(){
                 }
             }
             if(!showProduct){
-                $(this).hide();
+                $(this).detach();
             }
         });
     }
@@ -39,7 +40,17 @@ $(document).ready(function(){
         $('.col-sm-4').each(function(){
             var productCategories = $(this).find('.card-text').last().text().toLowerCase().split(', ');
             var productPrice = parseFloat($(this).find('.card-text').first().text().replace('$', ''));
-            var showProduct = selectedCategories.length === 0 || selectedCategories.some(category => productCategories.includes(category));
+            var showProduct = true;
+            console.log(productCategories);
+            if(selectedCategories.length > 0){
+                showProduct = false;
+                for(var i = 0; i < selectedCategories.length; i++){
+                    if(productCategories.includes(selectedCategories[i])){
+                        showProduct = true;
+                        break;
+                    }
+                }
+            }
 
             if(productPrice > maxPrice){
                 showProduct = false;
@@ -61,10 +72,22 @@ $(document).ready(function(){
             
             $('#products').empty().append(sortedElements);
         }
-
-        // Reset the price sorting to "None"
-        $('#price-sort').val('');
+        
     });
+
+    $('#search').on('input', function() {
+        var searchVal = $(this).val().toLowerCase();
+    
+        $('.col-sm-4').each(function(){
+            var productTitle = $(this).find('.card-title').text().toLowerCase();
+            if(productTitle.includes(searchVal)){
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+    
 });
 
 function updateCartCount(){
