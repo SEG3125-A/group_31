@@ -30,6 +30,11 @@ h1 {
     font-size: 20px !important;
   }
 
+#navbar.scrolled {
+    background: black !important;
+}
+
+
 /* Hero Content */
 .hero-box {
     padding-top: 15rem;
@@ -46,5 +51,14 @@ h1 {
     margin: 5px 0;
     font-size: 20px;
     height: fit-content;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.review-section {
+    background-color: black;
 }
 
