@@ -10,6 +10,9 @@ header {
 p {
     margin: 0;
 }
+span {
+    font-weight: bold;
+}
 .hero-box p {
     color: white;
 }
@@ -69,3 +72,7 @@ h1 {
     width: 25%;
 }
 
+#serviceImage {
+    width: 50%;
+    height: auto;
+}

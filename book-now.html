@@ -94,14 +94,27 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="time" class="form-label">Preferred Barber</label>
-                            <select class="form-select" id="time" name="time" required>
+                            <label for="baber" class="form-label">Preferred Barber</label>
+                            <select class="form-select" id="barber" name="barber" required>
                                 <option value="" disabled selected>Select a barber</option>
                                 <option value="09:00">No Preferences</option>
                                 <option value="10:00">John Doe</option>
                                 <option value="11:00">James Smith</option>
                                 <option value="12:00">Robert Johnson</option>
                                 <option value="13:00">Michael Williams</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service</label>
+                            <select class="form-select" id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Classic Combo">Classic Combo</option>
+                                <option value="Simple Fade">Simple Fade</option>
+                                <option value="Senior Snip">Senior Snip</option>
+                                <option value="Hot Shave Duo">Hot Shave Duo</option>
+                                <option value="Smooth Finish">Smooth Finish</option>
+                                <option value="Quick Line-Up">Quick Line-Up</option>
                             </select>
                         </div>
                         <a href="payment.html" class="btn btn-primary" role="button">Submit</a>
@@ -121,5 +134,6 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="../script/product.js"></script>
         <script src="script.js"></script>
+        <script src="book-now.js"></script>
 </body>
 </html>

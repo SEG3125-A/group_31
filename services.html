@@ -56,8 +56,13 @@
     <div class="sticky-top bg-white hidden-spacer"> </div>
 
     <div class="container-sm mx-5">
-        <h1>Our Services</h1>
-        <div class="accordion" id="accordionExample">
+        <div style="display: flex; align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+              </svg>
+            <h1 style="margin-left: 5px;">Our Services</h1>
+        </div>
+        <div class="accordion mt-5" id="accordionExample">
             <!-- Classic Combo -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -67,32 +72,14 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <img src="/images/classic.jpg" alt="Service Image" id="serviceImage">
                         <div class="service-details">
                             <div class="service-info">
                                 <div class="price-duration">
                                     <span class="service-price">CAD$50.00</span> | <span class="service-duration">50 mins</span>
                                 </div>
                                 <p class="service-description">A timeless blend of fade and beard grooming.</p>
-                            </div>
-                            <div class="barber-selection">
-                                <label for="barberSelect1">Choose Barber:</label>
-                                <select id="barberSelect1" name="barberSelect1">
-                                    <option value="barber1">John Doe</option>
-                                    <option value="barber2">James Smith</option>
-                                    <option value="barber3">Robert Johnson</option>
-                                    <option value="barber3">Michael Williams</option> 
-                                </select>
-                                <br>
-                                <label for="appointmentDate1">Choose a date for your appointment:</label>
-                                <input type="date" id="appointmentDate1" name="appointmentDate1">
-                                <br>
-                                <label for="appointmentTime1">Choose a time for your appointment:</label>
-                                <input type="time" id="appointmentTime1" name="appointmentTime1">
-                                <br>
-                                <button type="button" class="btn btn-primary" onclick="openAppointmentModal('Classic Combo')">
-                                    Schedule Appointment
-                                </button>
-                                
+                                <a id="scheduleAppointment" href="javascript:void(0);" onclick="bookNow('Classic Combo')"><button type="button" class="btn btn-primary px-3">Schedule Appointment</button></a>
                             </div>
                         </div>
                     </div>
@@ -107,32 +94,14 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <img src="/images/fade.jpg" alt="Service Image" id="serviceImage">
                         <div class="service-details">
                             <div class="service-info">
                                 <div class="price-duration">
                                     <span class="service-price">CAD$35.00</span> | <span class="service-duration">30 mins</span>
                                 </div>
                                 <p class="service-description">A straightforward skin fade for a clean look.</p>
-                            </div>
-                            <div class="barber-selection">
-                                <label for="barberSelect2">Choose Barber:</label>
-                                <select id="barberSelect2" name="barberSelect2">
-                                    <option value="barber1">John Doe</option>
-                                    <option value="barber2">James Smith</option>
-                                    <option value="barber3">Robert Johnson</option>
-                                    <option value="barber3">Michael Williams</option>
-                                </select>
-                                <br>
-                                <label for="appointmentDate2">Choose a date for your appointment:</label>
-                                <input type="date" id="appointmentDate2" name="appointmentDate2">
-                                <br>
-                                <label for="appointmentTime2">Choose a time for your appointment:</label>
-                                <input type="time" id="appointmentTime2" name="appointmentTime2">
-                                <br>
-                                <button type="button" class="btn btn-primary" onclick="openAppointmentModal('Simple Fade')">
-                                    Schedule Appointment
-                                </button>
-                                
+                                <a id="scheduleAppointment" href="javascript:void(0);" onclick="bookNow('Simple Fade')"><button type="button" class="btn btn-primary px-3">Schedule Appointment</button></a>
                             </div>
                         </div>
                     </div>
@@ -147,32 +116,15 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <img src="/images/senior.jpg" alt="Service Image" id="serviceImage">
                         <div class="service-details">
                             <div class="service-info">
                                 <div class="price-duration">
                                     <span class="service-price">CAD$35.00</span> | <span class="service-duration">30 mins</span>
                                 </div>
                                 <p class="service-description">Tailored cuts for distinguished gentlemen aged 60 and above.</p>
-                            </div>
-                            <div class="barber-selection">
-                                <label for="barberSelect3">Choose Barber:</label>
-                                <select id="barberSelect3" name="barberSelect3">
-                                    <option value="barber1">John Doe</option>
-                                    <option value="barber2">James Smith</option>
-                                    <option value="barber3">Robert Johnson</option>
-                                    <option value="barber3">Michael Williams</option>
-                                </select>
-                                <br>
-                                <label for="appointmentDate3">Choose a date for your appointment:</label>
-                                <input type="date" id="appointmentDate3" name="appointmentDate3">
-                                <br>
-                                <label for="appointmentTime3">Choose a time for your appointment:</label>
-                                <input type="time" id="appointmentTime3" name="appointmentTime3">
-                                <br>
-                                <button type="button" class="btn btn-primary" onclick="openAppointmentModal('Senior Snip')">
-                                    Schedule Appointment
-                                </button>
-                                
+                                <a id="scheduleAppointment" href="javascript:void(0);" onclick="bookNow('Senior Snip')"><button type="button" class="btn btn-primary px-3">Schedule Appointment</button></a>
+
                             </div>
                         </div>
                     </div>
@@ -187,32 +139,14 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <img src="/images/shave.jpg" alt="Service Image" id="serviceImage">
                         <div class="service-details">
                             <div class="service-info">
                                 <div class="price-duration">
                                     <span class="service-price">CAD$35.00</span> | <span class="service-duration">30 mins</span>
                                 </div>
                                 <p class="service-description">HA refreshing facial or head shave paired with a hot shave.</p>
-                            </div>
-                            <div class="barber-selection">
-                                <label for="barberSelect4">Choose Barber:</label>
-                                <select id="barberSelect4" name="barberSelect4">
-                                    <option value="barber1">John Doe</option>
-                                    <option value="barber2">James Smith</option>
-                                    <option value="barber3">Robert Johnson</option>
-                                    <option value="barber3">Michael Williams</option>
-                                </select>
-                                <br>
-                                <label for="appointmentDate4">Choose a date for your appointment:</label>
-                                <input type="date" id="appointmentDate4" name="appointmentDate4">
-                                <br>
-                                <label for="appointmentTime4">Choose a time for your appointment:</label>
-                                <input type="time" id="appointmentTime4" name="appointmentTime4">
-                                <br>
-                                <button type="button" class="btn btn-primary" onclick="openAppointmentModal('Hot Shave Duo')">
-                                    Schedule Appointment
-                                </button>
-                                
+                                <a id="scheduleAppointment" href="javascript:void(0);" onclick="bookNow('Hot Shave Duo')"><button type="button" class="btn btn-primary px-3">Schedule Appointment</button></a>
                             </div>
                         </div>
                     </div>
@@ -227,32 +161,15 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <img src="/images/smooth.jpg" alt="Service Image" id="serviceImage">
                         <div class="service-details">
                             <div class="service-info">
                                 <div class="price-duration">
                                     <span class="service-price">CAD$35.00</span> | <span class="service-duration">30 mins</span>
                                 </div>
                                 <p class="service-description">Achieve a sleek, polished look with our face shave..</p>
-                            </div>
-                            <div class="barber-selection">
-                                <label for="barberSelect5">Choose Barber:</label>
-                                <select id="barberSelect5" name="barberSelect5">
-                                    <option value="barber1">John Doe</option>
-                                    <option value="barber2">James Smith</option>
-                                    <option value="barber3">Robert Johnson</option>
-                                    <option value="barber3">Michael Williams</option>
-                                </select>
-                                <br>
-                                <label for="appointmentDate5">Choose a date for your appointment:</label>
-                                <input type="date" id="appointmentDate5" name="appointmentDate5">
-                                <br>
-                                <label for="appointmentTime5">Choose a time for your appointment:</label>
-                                <input type="time" id="appointmentTime5" name="appointmentTime5">
-                                <br>
-                                <button type="button" class="btn btn-primary" onclick="openAppointmentModal('Smooth Finish')">
-                                    Schedule Appointment
-                                </button>
-                                
+                                <a id="scheduleAppointment" href="javascript:void(0);" onclick="bookNow('Smooth Finish')"><button type="button" class="btn btn-primary px-3">Schedule Appointment</button></a>
+
                             </div>
                         </div>
                     </div>
@@ -267,32 +184,14 @@
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
+                        <img src="/images/line-up.jpg" alt="Service Image" id="serviceImage">
                         <div class="service-details">
                             <div class="service-info">
                                 <div class="price-duration">
                                     <span class="service-price">CAD$35.00</span> | <span class="service-duration">30 mins</span>
                                 </div>
                                 <p class="service-description">Precision maintenance for sharp edges and clean lines.</p>
-                            </div>
-                            <div class="barber-selection">
-                                <label for="barberSelect6">Choose Barber:</label>
-                                <select id="barberSelect6" name="barberSelect6">
-                                    <option value="barber1">John Doe</option>
-                                    <option value="barber2">James Smith</option>
-                                    <option value="barber3">Robert Johnson</option>
-                                    <option value="barber3">Michael Williams</option>
-                                </select>
-                                <br>
-                                <label for="appointmentDate6">Choose a date for your appointment:</label>
-                                <input type="date" id="appointmentDate6" name="appointmentDate6">
-                                <br>
-                                <label for="appointmentTime6">Choose a time for your appointment:</label>
-                                <input type="time" id="appointmentTime6" name="appointmentTime6">
-                                <br>
-                                <button type="button" class="btn btn-primary" onclick="openAppointmentModal('Quick Line-Up')">
-                                    Schedule Appointment
-                                </button>
-                                
+                                <a id="scheduleAppointment" href="javascript:void(0);" onclick="bookNow('Quick Line-Up')"><button type="button" class="btn btn-primary px-3">Schedule Appointment</button></a>
                             </div>
                         </div>
                     </div>
@@ -301,10 +200,10 @@
             <!-- Continue adding services in the same format -->
         </div>
     </div>
-        <div class="signature">
-            <p>©SEG 3125 Groupe 31</p>
-            <p>Jean-Marc N'Guessan, Tyler Desmarais, Avneesh Chaudhary</p> 
-        </div>
+    <div class="signature text-center mt-5">
+        <p>©SEG 3125 Groupe 31</p>
+        <p>Jean-Marc N'Guessan, Tyler Desmarais, Avneesh Chaudhary</p> 
+    </div>
         <script src="script.js"></script>
     </body>
 </html>

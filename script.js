@@ -6,3 +6,7 @@ window.onscroll = function() {
         navbar.classList.remove('scrolled');
     }
 };
+function bookNow(service) {
+    window.location.href = "book-now.html?service=" + encodeURIComponent(service);
+}
+
