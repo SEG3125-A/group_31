@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analyst Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Survey Results</h1>
+        <table id="resultsTable" class="table">
+            <!-- Table headers will be added here -->
+            <thead></thead>
+            <!-- Table data will be added here -->
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Fetch the survey data when the page loads
+        window.onload = function() {
+            fetch('http://localhost:5501/get_survey_data')
+                .then(response => response.json())
+                .then(data => {
+                    // Get the table elements
+                    var thead = document.getElementById('resultsTable').getElementsByTagName('thead')[0];
+                    var tbody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
+    
+                    // Add a header row to the table for each key in the data
+                    var headerRow = thead.insertRow();
+                    for (var key in data) {
+                        var th = document.createElement('th');
+                        th.appendChild(document.createTextNode(key));
+                        headerRow.appendChild(th);
+                    }
+    
+                    // Add a data row to the table for each value in the data
+                    var dataRow = tbody.insertRow();
+                    for (var key in data) {
+                        var td = dataRow.insertCell();
+                        td.appendChild(document.createTextNode(data[key]));
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        };
+    </script>    
+</body>
+</html>

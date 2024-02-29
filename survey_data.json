@@ -1,0 +1,11 @@
+{
+  "textQuestion": "good",
+  "radioQuestion": "Yes",
+  "listQuestion": "responsive_design",
+  "checkboxQuestion": [
+    "Loading speed",
+    "Clarity of information"
+  ],
+  "visual_appeal": "Neutral",
+  "comments": "Hello, world!"
+}
