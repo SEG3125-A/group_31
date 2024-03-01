@@ -1,155 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js" integrity="sha384-sN5FbqA8p7XM6jQ9EmTTOzqMF6I4j3/A6MLG1XM5Xub3iBXYdaBVsYyo9v8SpaT6" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="../script/product.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/main.css">
-    </head>
-    <body>
-        <header class="bg-img">
-        <div class="container-sm mx-5">
-            <section id="hero" style="padding-top: 56px;"> <!-- Add a top padding equal to the height of the navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="navbar">
-                    <div class="container-fluid">
-                        <h1>PLACE31</h1>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link px-5" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-5" href="services.html">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-5" href="about-us.html">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="book-now.html"><button type="button" class="btn btn-outline-primary px-3">Book Now</button></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="container-fluid hero-box">
-                    <h1 class="anime-title">Elevate <br>Your Style</h1>
-                    <p class="hero-desc">Experience sophistication at its finest. Welcome to PLACE31, 
-                                        where tradition meets modern style. Step in for precision cuts, expert shaves, 
-                                        and timeless charm. Book your appointment today.
-                </div>
-            </section>
-        </div>
-    </header>
-    <div class="sticky-top bg-white hidden-spacer"> </div>
+<html>
 
-    <div class="container-sm mx-5 mb-5">
-        <div style="display: flex; align-items: center;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-            </svg>
-            <h1 style="margin-left: 5px;">Meet the team</h1>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-sm-3">
-                    <div class="card text-black">
-                        <img src="/images/barber1.jpg" class="card-img-top" alt="John Doe">
-                        <div class="card-body">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">John Doe, a master of precision cuts, 
-                                has been transforming styles at PLACE31 for over 5 years.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src="/images/barber2.jpg" class="card-img-top" alt="James Smith">
-                        <div class="card-body">
-                            <h5 class="card-title">James Smith</h5>
-                            <p class="card-text">James, an expert in classic shaves, 
-                                has been delivering  services at PLACE31 for 3 years.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src="/images/barber3.jpg" class="card-img-top" alt="Robert Johnson">
-                        <div class="card-body">
-                            <h5 class="card-title">Robert Johnson</h5>
-                            <p class="card-text">Robert Johnson, a specialist in modern styles, 
-                                has been innovating at PLACE31 for 4 exciting years.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-sm-3">
-                    <div class="card">
-                        <img src="/images/barber4.jpg" class="card-img-top" alt="Michael Williams">
-                        <div class="card-body">
-                            <h5 class="card-title">Michael Williams</h5>
-                            <p class="card-text">Michael Williams, renowned for his creative hair designs, 
-                                has been crafting unique looks at PLACE31 for 2 years.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<head>
+    <title>Sport Check UI Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js" integrity="sha384-sN5FbqA8p7XM6jQ9EmTTOzqMF6I4j3/A6MLG1XM5Xub3iBXYdaBVsYyo9v8SpaT6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="server-view.html" class="admin">Admin</a>
     </div>
-
-    <!-- Review Section -->
-    <div class="bg-dark text-white pt-5 review-section">
-        <div class="containers mx-5">
-            <div style="display: flex; align-items: center;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                  </svg>
-                <h1 style="margin-left: 5px;">Reviews</h1>
-            </div>
-            <div class="d-flex justify-content-evenly">
-                <blockquote class="blockquote mt-5 text-center">
-                    <p class="mb-0"><i class="fas fa-quote-left mx-3"></i> PLACE31 has transformed my style. 
-                        The precision cuts and expert shaves are unmatched. I highly recommend their services! 
-                        <i class="fas fa-quote-right mx-3"></i></p>
-                </blockquote>
-
-                <blockquote class="blockquote mt-5 text-center">
-                    <p class="mb-0"><i class="fas fa-quote-left mx-3"></i> The team at PLACE31 is simply the best. 
-                        They always know how to give me the perfect style. Their services are worth every penny! 
-                        <i class="fas fa-quote-right mx-3"></i></p>
-                </blockquote>
-
-                <blockquote class="blockquote mt-5 text-center">
-                    <p class="mb-0"><i class="fas fa-quote-left mx-3"></i> I've never had a better haircut than at PLACE31. 
-                        Their attention to detail and expertise is unmatched. Highly recommended! 
-                        <i class="fas fa-quote-right mx-3"></i></p>
-                </blockquote>
-            </div>
+    <div class="hero-container">
+        <div>
+            <h1><a class="title-link" href="https://www.sportchek.ca" target="_blank">SportCheck</a> UI Survey</h1>
+            <p class="hero-desc md-5">Join our brief survey to enhance the user interface.
+                Your insights will play a crucial role in creating a
+                seamless and winning online experience.</p>
+            <a class="survey-button mt-5" href="#first">Take the Survey</a>
         </div>
-
-        <div class="signature text-center mt-5">
-            <p>©SEG 3125 Groupe 31</p>
-            <p>Jean-Marc N'Guessan, Tyler Desmarais, Avneesh Chaudhary</p> 
-        </div>
+        <a href="https://www.sportchek.ca" target="_blank">
+            <img src="/images/homepage.png" alt="UI to be evaluated">
+        </a>
     </div>
+    <div class="form-container" id="survey-section">
+        <form id="surveyForm" action="http://localhost:5501/submit_survey" method="post">
+            <div>
+                <label id="first" for="textQuestion">What is your overall impression of this website?</label>
+                <input type="text" id="textQuestion" name="textQuestion">
+            </div>
+            <div>
+                <label for="radioQuestion">Did you find the website easy to navigate?</label>
+                <div class="checkbox-options">
+                    <input type="radio" id="yes" name="radioQuestion" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="radioQuestion" value="No">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div>
+                <label for="listQuestion">Which of the following features on the website do you find most helpful in terms of user interface design?</label>
+                <select id="listQuestion" name="listQuestion">
+                    <option value="clear_menu">Clear and intuitive menu</option>
+                    <option value="search_functionality">Search functionality</option>
+                    <option value="responsive_design">Responsive design for different devices</option>
+                    <option value="consistent_color_layout">Consistent color scheme and layout</option>
+                </select>
+            </div>
+            <div>
+                <label for="checkboxQuestion">Please select all the aspects of the website's UI that you think need improvement:</label>
+                <div class="checkbox-options">
+                    <input type="checkbox" id="loading_speed" name="checkboxQuestion" value="Loading speed">
+                    <label for="loading_speed">Loading speed</label>
 
-        <script src="script.js"></script>
-    </body>
+                    <input type="checkbox" id="clarity_of_info" name="checkboxQuestion" value="Clarity of information">
+                    <label for="clarity_of_info">Clarity of information</label>
+
+                    <input type="checkbox" id="button_placement" name="checkboxQuestion" value="Button placement">
+                    <label for="button_placement">Button placement</label>
+
+                    <input type="checkbox" id="icons_visuals" name="checkboxQuestion" value="Use of icons and visuals">
+                    <label for="icons_visuals">Use of icons and visuals</label>
+
+                    <input type="checkbox" id="readability_of_text" name="checkboxQuestion" value="Readability of text">
+                    <label for="readability_of_text">Readability of text</label>
+                </div>
+            </div>
+            <div>
+                <label for="visual_appeal">How would you rate the overall visual appeal of the website's UI?</label>
+                <div class="radio-options">
+                    <input type="radio" id="very_appealing" name="visual_appeal" value="Very appealing">
+                    <label for="very_appealing">Very appealing</label>
+
+                    <input type="radio" id="somewhat_appealing" name="visual_appeal" value="Somewhat appealing">
+                    <label for="somewhat_appealing">Somewhat appealing</label>
+
+                    <input type="radio" id="neutral" name="visual_appeal" value="Neutral">
+                    <label for="neutral">Neutral</label>
+
+                    <input type="radio" id="somewhat_unappealing" name="visual_appeal" value="Somewhat unappealing">
+                    <label for="somewhat_unappealing">Somewhat unappealing</label>
+
+                    <input type="radio" id="very_unappealing" name="visual_appeal" value="Very unappealing">
+                    <label for="very_unappealing">Very unappealing</label>
+                </div>
+            </div>
+            <div>
+                <label for="comments">Any additional comments or suggestions?</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit" class="submit-button" id="liveAlertBtn">Submit</button>
+        </form>
+        <div id="liveAlertPlaceholder"></div>
+    </div>
+    <div class="signature">
+        <p>©SEG 3125 Groupe 31</p>
+        <p>Jean-Marc N'Guessan, Tyler Desmarais, Avneesh Chaudhary</p>
+    </div>
+</body>
+
 </html>
-    
