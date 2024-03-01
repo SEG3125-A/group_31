@@ -12,5 +12,17 @@
     "visual_appeal": "Neutral",
     "comments": "Testing",
     "timestamp": "2024-02-29T23:23:56.081Z"
+  },
+  {
+    "textQuestion": "Very good",
+    "radioQuestion": "Yes",
+    "listQuestion": "search_functionality",
+    "checkboxQuestion": [
+      "Clarity of information",
+      "Button placement"
+    ],
+    "visual_appeal": "Very appealing",
+    "comments": "It's a very good website!",
+    "timestamp": "2024-03-01T04:17:49.024Z"
   }
 ]
