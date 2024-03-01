@@ -12,17 +12,5 @@
     "visual_appeal": "Neutral",
     "comments": "Testing",
     "timestamp": "2024-02-29T23:23:56.081Z"
-  },
-  {
-    "textQuestion": "Its good",
-    "radioQuestion": "Yes",
-    "listQuestion": "search_functionality",
-    "checkboxQuestion": [
-      "Loading speed",
-      "Clarity of information"
-    ],
-    "visual_appeal": "Somewhat appealing",
-    "comments": "Testing 2",
-    "timestamp": "2024-02-29T23:24:47.275Z"
   }
 ]
