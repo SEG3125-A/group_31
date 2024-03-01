@@ -11,6 +11,21 @@ h1 {
     
 }
 
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #4DC3E8;
+}
 .hero-desc {
     font-size: 32px;
 }

@@ -5,26 +5,38 @@
     <title>Sport Check UI Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/main.css">
+    <script src="alert.js"></script>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js" integrity="sha384-sN5FbqA8p7XM6jQ9EmTTOzqMF6I4j3/A6MLG1XM5Xub3iBXYdaBVsYyo9v8SpaT6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="server-view.html" class="admin">Admin</a>
+    </div>
     <div class="hero-container">
         <div>
             <h1><a class="title-link" href="https://www.sportchek.ca" target="_blank">SportCheck</a> UI Survey</h1>
-            <p class="hero-desc">Join our brief survey to enhance the user interface.
+            <p class="hero-desc md-5">Join our brief survey to enhance the user interface.
                 Your insights will play a crucial role in creating a
                 seamless and winning online experience.</p>
-            <a class="survey-button" href="#first">Take the Survey</a>
+            <a class="survey-button mt-5" href="#first">Take the Survey</a>
         </div>
         <a href="https://www.sportchek.ca" target="_blank">
             <img src="/images/homepage.png" alt="UI to be evaluated">
         </a>
     </div>
     <div class="form-container" id="survey-section">
-        <form action="http://localhost:5501/submit_survey" method="post">
+        <form id="surveyForm" action="http://localhost:5501/submit_survey" method="post">
             <div>
                 <label id="first" for="textQuestion">What is your overall impression of this website?</label>
                 <input type="text" id="textQuestion" name="textQuestion">
@@ -89,13 +101,15 @@
                 <label for="comments">Any additional comments or suggestions?</label>
                 <textarea id="comments" name="comments"></textarea>
             </div>
-            <button type="submit" class="submit-button">Submit</button>
+            <button type="submit" class="submit-button" id="liveAlertBtn">Submit</button>
         </form>
+        <div id="liveAlertPlaceholder"></div>
     </div>
     <div class="signature">
         <p>©SEG 3125 Groupe 31</p>
-        <p>Jean-Marc N'Guessan, Tyler Desmarais, Avneesh Chaudhary</p> 
+        <p>Jean-Marc N'Guessan, Tyler Desmarais, Avneesh Chaudhary</p>
     </div>
+    <script src="alert.js"></script>
 </body>
 
 </html>
