@@ -4,121 +4,108 @@ html {
 
 body {
     margin: 0;
-}
-
-h1 {
-    font-size: 64px;
-    
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #333;
-    padding: 10px;
-}
-.navbar a {
+    background-color: black !important;
+    width: 100%;
+    height:auto;
     color: white;
-    margin-right: 10px;
-    text-decoration: none;
+}
+.container {
+    width: auto !important;
+    margin: 0 6rem !important;
+    padding: 0 !important
+}
+.container-fluid {
+    padding: 0 !important;
+    width: 100% !important;
+}
+.btn-primary {
+    background-color: #00CDFF !important;
+    border-color: #00CDFF !important;
 }
 
-.navbar a:hover {
-    color: #4DC3E8;
+/* Navbar*/
+a.nav-link {
+    font-size: 24px !important;
+}
+.navbar-nav a.active {
+    font-weight: bold;
+}
+.navbar-nav a:hover {
+    color: #00CDFF !important;
+    font-weight: bold;
+}
+#hero .navbar {
+    background-color: transparent !important;
+}
+.navbar .nav-link {
+    color: white !important;
+}
+.navbar-brand {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.btn-outline-primary {
+    color: #00CDFF !important;
+    border-color: #00CDFF !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #00CDFF !important;
+    border-color: #00CDFF !important;
+}
+.bg-img {
+    width: 100%;
+    height: 90vh;
+    background-image: url("/wallpapers/chainsaw-man.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 200%);
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 200%);
+    z-index: 0;
+}
+
+
+
+.bg-dark {
+    color: black;
+}
+/* Hero section */
+.hero-box {
+    padding-top: 20rem;
+    z-index: 2;
 }
 .hero-desc {
-    font-size: 32px;
-}
-
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background: #4DC3E8;
-    color: white;
-    height: 550px;
-}
-.title-link {
-    color: black;
-}
-
-.survey-button {
-    background: white;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.hero-container img {
-    margin-left: 20px;
-    width: 795px;
-    height: 470px;
-}
-
-.hero-container div {
-    width: 50%;
-}
-
-.form-container {
-    margin: 150px 80px 0 80px;
-}
-
-form div {
-    margin-bottom: 30px; /* Increased space between questions */
-}
-
-form div label {
-    display: block;
-    margin-bottom: 10px; /* Increased margin for better separation */
+    width: 40%;
+    margin: 5px 0;
     font-size: 18px;
-    font-weight: bold;
+}
+.anime-title {
+    font-size:96px !important;
 }
 
-form div input[type="text"],
-form div textarea {
-    width: 100%; 
-    max-width: 600px; 
-    padding: 10px;
-    box-sizing: border-box;
+.trending {
+    margin-top: 5rem !important;
+    height: auto !important;
 }
 
-form div input[type="radio"],
-form div input[type="checkbox"] {
-    margin-right: 5px;
-}
 
-form div select#listQuestion {
-    width: 200px; 
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-form div .checkbox-options label,
-form div .radio-options label {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 16px;
-    font-weight: normal;
-}
-#comments {
-    width: 100%; 
-    max-width: 600px; 
-    height: 200px;
-    max-height: 200px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.submit-button {
-    background: #4DC3E8;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
+/* Footer/signature */
 .signature {
     text-align: center;
-    margin-top: 100px; /* Adjust the margin-top as needed */
+    margin-top: 100px;
+    color: white;
 }
 
 .signature p {
