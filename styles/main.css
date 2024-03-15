@@ -9,14 +9,13 @@ body {
     height:auto;
     color: white;
 }
-.container {
+.custom-container {
     width: auto !important;
     margin: 0 6rem !important;
     padding: 0 !important
 }
 .container-fluid {
     padding: 0 !important;
-    width: 100% !important;
 }
 .btn-primary {
     background-color: #00CDFF !important;
@@ -83,23 +82,30 @@ a.nav-link {
 }
 /* Hero section */
 .hero-box {
-    padding-top: 20rem;
+    padding-top: 10rem;
     z-index: 2;
+}
+.anime-title {
+    font-size:96px !important;
 }
 .hero-desc {
     width: 40%;
     margin: 5px 0;
     font-size: 18px;
 }
-.anime-title {
-    font-size:96px !important;
+.watch:hover {
+    color: black !important;
 }
 
-.trending {
+
+.content {
     margin-top: 5rem !important;
     height: auto !important;
 }
 
+.full-catalog {
+    margin-top: 10rem !important;
+}
 
 /* Footer/signature */
 .signature {
