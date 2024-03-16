@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/* BASIC */
-
-html {
-  background-color: #00CDFF;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  height: 100vh;
-}
 
 a {
   color: black;
