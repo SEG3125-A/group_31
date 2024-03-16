@@ -11,7 +11,7 @@ const Card = ({ title, year, rating, description, imgSrc }) => (
       <a href="#"><img src={imgSrc} className="card-img-top" alt=""/></a>
       <div className="card-body anime-info">
         <h3 className="card-title">{title}</h3>
-        <div className="d-flex align-items-center mb- year-rating">
+        <div className="d-flex align-items-center mb-2 year-rating">
           <div className="me-3 year">{year}</div>
           <img src={images('./star.svg')} alt="" width="16px" height="16px"/>
           <div className="ms-2">{rating}</div>

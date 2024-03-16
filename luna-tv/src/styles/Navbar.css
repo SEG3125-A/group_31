@@ -7,7 +7,6 @@ a.nav-link {
   }
   .navbar-nav a:hover {
     color: #00CDFF !important;
-    font-weight: bold;
   }
   #hero .navbar {
     background-color: transparent !important;
@@ -77,6 +76,13 @@ a.nav-link {
   .watch:hover {
     color: black !important;
 }
+.detail:hover {
+  color: #00CDFF !important;
+}
+.icon-text {
+  margin-left: 0.5rem; /* Adjust this value as needed */
+}
+
 
 .login-background {
   background-image: none;
