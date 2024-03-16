@@ -22,18 +22,8 @@ body {
   border-color: #00CDFF !important;
 }
 
-
 .bg-dark {
   color: black !important;
-}
-
-.content {
-  margin-top: 5rem !important;
-  height: auto !important;
-}
-
-.full-catalog {
-  margin-top: 10rem !important;
 }
 
 /* Footer/signature */
@@ -45,12 +35,4 @@ body {
 
 .signature p {
   margin: 5px 0; /* Adjust the margin as needed */
-}
-
-.full-ctg:hover {
-  color: black !important;
-}
-
-.login-container {
-  width: 90% !important;
 }

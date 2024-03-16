@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Card.css';
 import './styles/Content.css';
+import './styles/App.css';
 
 const images = require.context('./Content', true);
 

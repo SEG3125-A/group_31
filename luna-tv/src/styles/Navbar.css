@@ -50,6 +50,16 @@ a.nav-link {
     background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 200%);
     z-index: 0;
   }
+.search-btn:hover{
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+  }
+.login-btn:hover{
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+  }
 
   /* Hero section */
 .hero-box {
@@ -66,4 +76,8 @@ a.nav-link {
   }
   .watch:hover {
     color: black !important;
+}
+
+.login-background {
+  background-image: none;
 }
