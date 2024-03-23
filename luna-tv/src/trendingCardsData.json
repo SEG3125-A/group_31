@@ -1,0 +1,44 @@
+[
+    {
+        "title": "One Piece",
+        "year": 1999,
+        "rating": 8.7,
+        "description": "One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates, where he explores the Grand Line in search of the mythical treasure known as the 'One Piece' in order to become the next King of the Pirates.",
+        "imgSrc": "./1.jpg"
+    },
+    {
+        "title": "Dark",
+        "year": 2017,
+        "rating": 8.8,
+        "description": "Dark is a German science fiction thriller television series co-created by Baran bo Odar and Jantje Friese. It ran for three seasons from 2017 to 2020. The story follows characters from the fictional town of Winden, Germany, as they pursue the truth in the aftermath of a child's disappearance.",
+        "imgSrc": "./14.jpg"
+    },
+    {
+        "title": "The Circle",
+        "year": 2020,
+        "rating": 7.2,
+        "description": "The Circle is an American reality competition series, produced by Studio Lambert and Motion Content Group, that first aired on Netflix in January 2020. It is a game based around social media, with the concept that 'anyone can be anyone in The Circle.",
+        "imgSrc": "./15.jpg"
+    },
+    {
+        "title": "My Hero Academia",
+        "year": 2016,
+        "rating": 8.2,
+        "description": "My Hero Academia is a Japanese manga series written and illustrated by Kōhei Horikoshi. The story follows Izuku Midoriya, a boy who was born without a Quirk but still dreams of becoming a superhero himself.",
+        "imgSrc": "./17.jpg"
+    },
+    {
+        "title": "The Wolf of Wall Street",
+        "year": 2013,
+        "rating": 8.2,
+        "description": "The Wolf of Wall Street is a 2013 American epic biographical black comedy crime film co-produced and directed by Martin Scorsese and written by Terence Winter, based on Jordan Belfort's 2007 memoir of the same name.",
+        "imgSrc": "./7.jpg"
+    },
+    {
+        "title": "Breaking Bad",
+        "year": 2008,
+        "rating": 9.5,
+        "description": "Breaking Bad is an American television drama series created by Vince Gilligan. The story is about Walter White, a 50-year-old high school chemistry teacher in Albuquerque, New Mexico, who turns to a life of crime after being diagnosed with inoperable lung cancer.",
+        "imgSrc": "./5.jpg"
+    }
+]

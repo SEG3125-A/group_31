@@ -1,0 +1,89 @@
+/* Navbar*/
+a.nav-link {
+    font-size: 24px !important;
+  }
+  .navbar-nav a.active {
+    font-weight: bold;
+  }
+  .navbar-nav a:hover {
+    color: #00CDFF !important;
+  }
+  #hero .navbar {
+    background-color: transparent !important;
+  }
+  .navbar .nav-link {
+    color: white !important;
+  }
+  .navbar-brand {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .btn-outline-primary {
+    color: #00CDFF !important;
+    border-color: #00CDFF !important;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #00CDFF !important;
+    border-color: #00CDFF !important;
+  }
+  .bg-img {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../wallpapers/chainsaw-man.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 200%);
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 200%);
+    z-index: 0;
+  }
+.search-btn:hover{
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+  }
+.login-btn:hover{
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+  }
+
+  /* Hero section */
+.hero-box {
+    padding-top: 10rem;
+    z-index: 2;
+  }
+  .anime-title {
+    font-size:96px !important;
+  }
+  .hero-desc {
+    width: 40%;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  .watch:hover {
+    color: black !important;
+}
+.detail:hover {
+  color: #00CDFF !important;
+}
+.icon-text {
+  margin-left: 0.5rem; /* Adjust this value as needed */
+}
+
+
+.login-background {
+  background-image: none;
+}

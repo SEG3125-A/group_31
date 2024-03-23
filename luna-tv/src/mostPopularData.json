@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Avenger: Endgame",
+        "year": 2019,
+        "rating": 8.4,
+        "description": "The Avengers unite to reverse the damage caused by Thanos in Infinity War. The epic showdown results in the Avengers going on a journey through time and space.",
+        "imgSrc": "./16.jpg"
+    },
+    {
+        "title": "Up",
+        "year": 2009,
+        "rating": 8.2,
+        "description": "A grumpy old man named Carl Fredricksen ties thousands of balloons to his house to fly to the South American wilderness. But he discovers a young stowaway, and the two embark on an adventure.",
+        "imgSrc": "./4.jpg"
+    },
+    {
+        "title": "Spider-Man: Across the Verse",
+        "year": 2022,
+        "rating": 8.5,
+        "description": "The film explores the concept of the multiverse and features multiple Spider-Men from different dimensions. They must unite to fight a threat that could potentially destroy all their realities.",
+        "imgSrc": "./6.jpg"
+    },
+    {
+        "title": "Interstellar",
+        "year": 2014,
+        "rating": 8.6,
+        "description": "A group of explorers leave Earth to travel through a wormhole in space in an attempt to ensure humanity's survival as Earth's resources are nearly exhausted.",
+        "imgSrc": "./10.jpg"
+    },
+    {
+        "title": "Cars 3",
+        "year": 2017,
+        "rating": 6.7,
+        "description": "Lightning McQueen sets out to prove to a new generation of racers that he's still the best race car in the world. This journey leads him to discover that winning isn't everything.",
+        "imgSrc": "./9.jpg"
+    },
+    {
+        "title": "Joker",
+        "year": 2019,
+        "rating": 8.4,
+        "description": "The film provides a possible origin story for the Joker and presents a character study of a man disregarded by society that is not only a gritty character study, but also a broader cautionary tale.",
+        "imgSrc": "./12.jpg"
+    }
+]
