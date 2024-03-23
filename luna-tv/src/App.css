@@ -1,0 +1,38 @@
+html {
+  font-family: 'Poppins';
+}
+
+body {
+  margin: 0;
+  background-color: black !important;
+  width: 100%;
+  height:auto;
+  color: white;
+}
+.custom-container {
+  width: auto !important;
+  margin: 0 6rem !important;
+  padding: 0 !important
+}
+.container-fluid {
+  padding: 0 !important;
+}
+.btn-primary {
+  background-color: #00CDFF !important;
+  border-color: #00CDFF !important;
+}
+
+.bg-dark {
+  color: black !important;
+}
+
+/* Footer/signature */
+.signature {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+
+.signature p {
+  margin: 5px 0; /* Adjust the margin as needed */
+}
