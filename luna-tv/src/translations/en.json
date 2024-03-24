@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "home": "Home",
+        "newRelease": "New Release",
+        "categories": "Categories",
+        "mostPopular": "Most Popular",
+        "searchPlaceholder": "Search",
+        "loginButton": "Login"
+    },
+    "hero": {
+        "title": "Chainsaw Man",
+        "description": "Chainsaw Man follows the story of Denji, an impoverished young man who makes a contract that fuses his body with that of a dog-like devil named Pochita, granting him the ability to transform parts of his body into chainsaws. Denji eventually joins the Public Safety Devil Hunters, a government agency focused on fighting against devils whenever they become a threat to Japan.",
+        "button1": "Watch Now",
+        "button2": "Detail"
+    },
+    
+    "other": {
+        "fullCatalogue": "Full Catalogue",
+        "trendingSection": "Trending",
+        "popularSection": "Most Popular",
+        "like": "Like",
+        "dislike": "Dislike",
+        "favorite": "Add to favorite",
+        "signup": "Sign Up",
+        "password": "Password",
+        "forgot": "Forgot Password?"
+    },
+    "contentPage": {
+        "creator": "Creator",
+        "genre": ["Action", "Mystery", "Thriller", "Supernatural"],
+        "actors": "Cast",
+        "home": "Home",
+        "watching": "Watching",
+        "season": "Season",
+        "recommended": "You might also like",
+        "cardDescription": "Yuji Itadori, a young protagonist, unwittingly becomes entangled in the dangerous arts of jujutsu sorcery. When he consumes a cursed finger to save a classmate, he inadvertently hosts Ryomen Sukuna, a malevolent sorcerer known as the King of Curses, within his own soul. Curses, born from negative human emotions, haunt the world. Their cursed energy can be harnessed by both jujutsu sorcerers and cursed spirits."
+    }
+    
+    
+}
