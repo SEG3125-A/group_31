@@ -20,7 +20,10 @@
         "popularSection": "Les Plus Populaires",
         "like": "J'aime",
         "dislike": "J'aime pas",
-        "favorite": "Ajouter aux préférés"
+        "favorite": "Ajouter aux préférés",
+        "signup": "Créer un compte",
+        "password": "Mot de passe",
+        "forgot": "Oublié le mot de passe?"
     },
     "contentPage": {
         "creator": "Créateur",

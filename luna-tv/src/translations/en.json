@@ -20,7 +20,10 @@
         "popularSection": "Most Popular",
         "like": "Like",
         "dislike": "Dislike",
-        "favorite": "Add to favorite"
+        "favorite": "Add to favorite",
+        "signup": "Sign Up",
+        "password": "Password",
+        "forgot": "Forgot Password?"
     },
     "contentPage": {
         "creator": "Creator",
