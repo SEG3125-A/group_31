@@ -4,6 +4,7 @@ import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import './i18n';
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 
