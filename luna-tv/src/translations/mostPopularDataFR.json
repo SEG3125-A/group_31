@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "rating": 8.4,
+        "description": "Les Avengers s'unissent pour inverser les dommages causés par Thanos dans Infinity War. Le combat épique entraîne les Avengers dans un voyage à travers le temps et l'espace.",
+        "imgSrc": "./16.jpg"
+    },
+    {
+        "title": "Là-haut",
+        "year": 2009,
+        "rating": 8.2,
+        "description": "Un vieil homme grognon nommé Carl Fredricksen attache des milliers de ballons à sa maison pour s'envoler vers la nature sauvage d'Amérique du Sud. Mais il découvre un jeune passager clandestin, et les deux se lancent dans une aventure.",
+        "imgSrc": "./4.jpg"
+    },
+    {
+        "title": "Spider-Man: À travers l'Univers",
+        "year": 2022,
+        "rating": 8.5,
+        "description": "Le film explore le concept du multivers et présente plusieurs Spider-Men de différentes dimensions. Ils doivent s'unir pour combattre une menace qui pourrait potentiellement détruire toutes leurs réalités.",
+        "imgSrc": "./6.jpg"
+    },
+    {
+        "title": "Interstellar",
+        "year": 2014,
+        "rating": 8.6,
+        "description": "Un groupe d'explorateurs quitte la Terre pour voyager à travers un trou de ver dans l'espace dans le but d'assurer la survie de l'humanité alors que les ressources de la Terre sont presque épuisées.",
+        "imgSrc": "./10.jpg"
+    },
+    {
+        "title": "Cars 3",
+        "year": 2017,
+        "rating": 6.7,
+        "description": "Flash McQueen se lance dans une mission pour prouver à une nouvelle génération de coureurs qu'il est toujours la meilleure voiture de course au monde. Ce voyage le conduit à découvrir que gagner n'est pas tout.",
+        "imgSrc": "./9.jpg"
+    },
+    {
+        "title": "Joker",
+        "year": 2019,
+        "rating": 8.4,
+        "description": "Le film offre une possible histoire d'origine pour le Joker et présente une étude de caractère d'un homme ignoré par la société qui n'est pas seulement une étude de personnage sombre, mais aussi une mise en garde plus large.",
+        "imgSrc": "./12.jpg"
+    }
+]

@@ -1,0 +1,37 @@
+.play-button {
+    display: flex;
+    justify-content: center;
+    margin-top:5rem;
+}
+.play-button-img {
+    width: 120px !important;
+}
+.play-button-img:hover {
+    transform: scale(1.1);
+}
+
+.breadcrumb-item a {
+    color: white;
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #fff !important; /* Change color as needed */
+    margin: 0 0.5rem; /* Adjust spacing as needed */
+}
+
+
+.active {
+    color: #00CDFF !important;
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.content-player {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.video-player {
+    width: 100%;
+}

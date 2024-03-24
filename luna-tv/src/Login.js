@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Alert } from 'react-bootstrap'; // Import Alert from react-bootstrap
 import './styles/Login.css';
+import { useTranslation } from 'react-i18next';
 
 const Login = () => {
+  const { t, i18n } = useTranslation();
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const validateEmail = (email) => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!login || !password) {
+      setError('Please fill in all fields.');
+    } else if (!validateEmail(login)) {
+      setError('Invalid email address.');
+    } else if (password.length < 8) {
+      setError('Password must be at least 8 characters.');
+    } else {
+      setError('');
+      // Continue with form submission
+    }
+  }
+
   return (
     <div className="wrapper fadeInDown mt-5">
       <div id="formContent">
         {/* Tabs Titles */}
-        <h2 className="active"> Sign In </h2>
-        <h2 className="inactive underlineHover">Sign Up </h2>
+        <h2 className="active">{t('navbar.loginButton')}</h2>
+        <h2 className="inactive underlineHover">{t('other.signup')}</h2>
 
         {/* Icon */}
         <div className="fadeIn first">
@@ -17,15 +43,16 @@ const Login = () => {
         </div>
 
         {/* Login Form */}
-        <form>
-          <input type="text" id="login" className="fadeIn second" name="login" placeholder="login" />
-          <input type="text" id="password" className="fadeIn third" name="login" placeholder="password" />
-          <input type="submit" className="fadeIn fourth" value="Log In" />
+        <form onSubmit={handleSubmit}>
+          <input type="text" id="login" className="fadeIn second" name="login" placeholder="login" value={t('navbar.loginButton')} onChange={(e) => setLogin(e.target.value)} />
+          <input type="text" id="password" className="fadeIn third" name="password" placeholder="password" value={t('other.password')} onChange={(e) => setPassword(e.target.value)} />
+          {error && <Alert variant="danger">{error}</Alert>} {/* Use Alert to display error */}
+          <input type="submit" className="fadeIn fourth" value={t('navbar.loginButton')} />
         </form>
 
         {/* Remind Password */}
         <div id="formFooter">
-          <a className="underlineHover" href="#">Forgot Password?</a>
+          <a className="underlineHover" href="#">{t('other.forgot')}</a>
         </div>
       </div>
     </div>

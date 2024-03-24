@@ -1,0 +1,39 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "newRelease": "Nouvelle Sortie",
+        "categories": "Catégories",
+        "mostPopular": "Les Plus Populaires",
+        "searchPlaceholder": "Rechercher",
+        "loginButton": "Se connecter"
+    },
+    "hero": {
+        "title": "Chainsaw Man",
+        "description": "Chainsaw Man raconte l'histoire de Denji, un jeune homme appauvri qui passe un contrat fusionnant son corps avec celui d'un diable de type chien nommé Pochita, lui accordant la capacité de transformer des parties de son corps en tronçonneuses. Denji rejoint finalement les Chasseurs de Diables de la Sécurité Publique, une agence gouvernementale axée sur la lutte contre les diables chaque fois qu'ils deviennent une menace pour le Japon.",
+        "button1": "Regarder",
+        "button2": "Détail"
+    },
+
+    "other": {
+        "fullCatalogue": "Catalogue Complet",
+        "trendingSection": "Tendance",
+        "popularSection": "Les Plus Populaires",
+        "like": "J'aime",
+        "dislike": "J'aime pas",
+        "favorite": "Ajouter aux préférés",
+        "signup": "Créer un compte",
+        "password": "Mot de passe",
+        "forgot": "Oublié le mot de passe?"
+    },
+    "contentPage": {
+        "creator": "Créateur",
+        "genre": ["Action", "Mystère", "Thriller", "Surnaturel"],
+        "actors": "Distribution",
+        "home": "Accueil",
+        "watching": "En train de regarder",
+        "season": "Saison",
+        "recommended": "Vous pourriez aussi aimer",
+        "cardDescription": "Yuji Itadori, un jeune protagoniste, se retrouve malgré lui mêlé aux arts dangereux de la sorcellerie jujutsu. Lorsqu'il avale un doigt maudit pour sauver un camarade de classe, il devient involontairement l'hôte de Ryomen Sukuna, un sorcier maléfique connu sous le nom de Roi des Malédictions, dans son propre âme. Les Malédictions, nées des émotions humaines négatives, hantent le monde. Leur énergie maudite peut être exploitée à la fois par les sorciers jujutsu et les esprits maudits."
+    }
+    
+  }
