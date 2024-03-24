@@ -20,9 +20,15 @@ const ContentPage = () => {
         </div>
         <ContentInfo />
         <div className="content">
-            <h1 className="fs-2 mb-5 text-white">EP 1: Ryomen Sukuna</h1>
+            <nav aria-label="breadcrumb mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Watching: Jujutsu Kaisen EP 1</li>
+                </ol>
+            </nav>
+            <h1 className="fs-2 mb-5 mt-3 text-white">EP 1: Ryomen Sukuna</h1>
             <div className="content-player">
-                <img   id="player" className="video-player"src={videoPlayer} alt="Player" />
+                <img id="player" className="video-player"src={videoPlayer} alt="Player" />
             </div>
         </div>
         <EpisodeBox />
@@ -41,7 +47,7 @@ const ContentPage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-collection-fill" viewBox="0 0 16 16">
                     <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
                 </svg>
-                <span className="icon-text">Full Catalog</span>
+                <span className="icon-text">Full Catalogue</span>
                 </a>
             </div>
         </div>

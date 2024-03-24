@@ -17,7 +17,7 @@ const EpisodeBox = () => {
             </svg> 
         </a>
       </div>
-      <button className="btn btn-primary m-2">EP 1: Lorem Ipsum Hoshea...</button>
+      <button className="btn btn-light m-2">EP 1: Ryomen Sukuna</button>
       <button className="btn btn-primary m-2">EP 1: Lorem Ipsum Hoshea...</button>
       <button className="btn btn-primary m-2">EP 1: Lorem Ipsum Hoshea...</button>
       <button className="btn btn-primary m-2">EP 1: Lorem Ipsum Hoshea...</button>
