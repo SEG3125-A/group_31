@@ -55,25 +55,23 @@ a.nav-link {
     border-color: white !important;
   }
 .login-btn:hover{
-    background-color: white !important;
     color: black !important;
-    border-color: white !important;
   }
 
   /* Hero section */
 .hero-box {
     padding-top: 10rem;
     z-index: 2;
-  }
-  .anime-title {
+}
+.anime-title {
     font-size:96px !important;
-  }
-  .hero-desc {
+}
+.hero-desc {
     width: 40%;
     margin: 5px 0;
     font-size: 18px;
-  }
-  .watch:hover {
+}
+.watch:hover {
     color: black !important;
 }
 .detail:hover {
@@ -86,4 +84,11 @@ a.nav-link {
 
 .login-background {
   background-image: none;
+  background-color: #00CDFF;
+  height: 100vh;
+}
+.content-background {
+  background-image: url('../wallpapers/chainsaw-man.jpg');
+  background-color: black;
+  height: 100vh;
 }

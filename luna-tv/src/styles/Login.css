@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 
 
 a {
@@ -10,9 +10,8 @@ a {
 
 h2 {
   text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
   display:inline-block;
   margin: 40px 8px 10px 8px; 
   color: #cccccc;

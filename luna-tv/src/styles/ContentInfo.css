@@ -1,0 +1,55 @@
+.btn-primary {
+    background-color: #00CDFF;
+    color: white;
+}
+
+.btn-light {
+    background-color: white;
+    color: black;
+}
+.rating-btn {
+    width: 50%;
+}
+.text-white {
+    color: white !important;
+}
+
+.custom-text {
+    color: #00CDFF !important;
+}
+.custom-margin {
+    margin-top: 8rem !important;
+}
+.flex-grow-0 {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust this value to your needs */
+}
+
+.image-container {
+    width: 100% !important;
+}
+.img-fluid {
+    width: 110% !important;
+    height: auto;
+}
+
+.button-container {
+    display: flex; /* Change to inline-flex */
+    width: inherit; /* Set width to auto */
+    margin-top: 10px; /* Add margin-top for spacing */
+}
+
+.like:hover {
+    color: black !important;
+}
+.dislike:hover {
+    color: #00CDFF !important;
+}
+.content-desc {
+    font-size: 18px;
+}
+.favorite:hover {
+    color:black !important;
+}
+
+

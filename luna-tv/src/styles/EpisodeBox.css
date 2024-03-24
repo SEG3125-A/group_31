@@ -1,0 +1,31 @@
+.rectangle {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #00CDFF;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+.header-btn {
+    text-decoration: none;
+    color: white;
+}
+
+.header-text {
+    margin: 0 10px;
+}
+.my-button {
+    background-color: #00CDFF;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

@@ -6,19 +6,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from './Card'; 
 import Navbar from './Navbar';
 import Hero from './Hero';
-import Login from './Login'; // import the Login component
+import Login from './Login'; 
 import trendingCardsData from './trendingCardsData.json';
 import mostPopularData from './mostPopularData.json';
+import ContentPage from './ContentPage';
 
 const contentImage = require.context('./Content', true);
 
 const Main = () => {
   const location = useLocation();
   const isLoginPage = location.pathname === '/login';
+  const isContentPage = location.pathname === '/content-page';
 
   return (
-    <div className={`bg-img position-relative ${isLoginPage ? 'login-background' : ''}`}>
-      <div className={`custom-container container-fluid position-absolute top-0 ${isLoginPage ? 'login-container' : ''}`}> 
+    <div className={`bg-img position-relative ${isLoginPage ? 'login-background' : ' content-background'}`}>
+      <div className={`custom-container container-fluid position-absolute top-0 ${isLoginPage ? 'login-container' : 'content-container'}`}> 
         <section id="hero">
           <Navbar />
           <Routes>
@@ -55,6 +57,7 @@ const Main = () => {
               </>
             }/>
             <Route path="/login" element={<Login />} />
+            <Route path="/content-page" element={<ContentPage className={isContentPage ? 'login-container' : ''} />} />
           </Routes>
         </section>
       </div>
