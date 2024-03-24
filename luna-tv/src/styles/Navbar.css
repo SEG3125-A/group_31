@@ -58,6 +58,15 @@ a.nav-link {
     color: black !important;
   }
 
+.transparent {
+    background: transparent !important;
+    border: none !important;
+    align-items: center;
+    display: flex !important;
+}
+.language-preview {
+  font-size: 24px !important;
+}
   /* Hero section */
 .hero-box {
     padding-top: 10rem;

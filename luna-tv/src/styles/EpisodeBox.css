@@ -13,6 +13,9 @@
     color: white;
     padding: 10px;
 }
+.ep-btn {
+    width: 15% !important;
+}
 .header-btn {
     text-decoration: none;
     color: white;
