@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import './styles/App.css';
 import './styles/Content.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 import Card from './Card'; 
 import Navbar from './Navbar';
 import Hero from './Hero';

@@ -17,6 +17,13 @@
     text-decoration: none;
     color: white;
 }
+.dropdown{
+    text-decoration: none;
+    color: white !important;
+}
+.dropdown-toggle {
+    color: white !important;
+}
 
 .header-text {
     margin: 0 10px;
